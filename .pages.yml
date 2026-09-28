@@ -1,0 +1,28 @@
+content:
+  - name: appearance
+    label: Megjelenés
+    type: file
+    path: appearance.json
+    format: json
+    operations:
+      create: false
+      rename: false
+      delete: false
+    fields:
+      - name: background
+        label: Háttér színe
+        type: select
+        required: true
+        description: Válassz egy színt, majd mentsd el. Az oldal megnyitásakor már ez a háttér látszik.
+        options:
+          values:
+            - name: blue
+              label: Világoskék
+            - name: cream
+              label: Krémszín
+            - name: sage
+              label: Halványzöld
+            - name: rose
+              label: Púderrózsaszín
+            - name: white
+              label: Fehér
